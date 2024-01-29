@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TodoUnitTestSolid</string>
+    <string name="emptylist">list is empty</string>
+    <string name="add_todo">Add Todo</string>
+    <string name="title">Title</string>
+    <string name="description">description</string>
+    <string name="submit">submit</string>
+    <string name="upd_todo">Update Todo</string>
+    <string name="update">Update</string>
+    <string name="add">add</string>
+</resources>

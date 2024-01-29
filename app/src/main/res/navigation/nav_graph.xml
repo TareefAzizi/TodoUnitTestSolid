@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.project.todounittestsolid.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tool:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_updateTodoFragment"
+            app:destination="@id/updateTodoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addTodoFragment"
+            app:destination="@id/addTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateTodoFragment"
+        android:name="com.project.todounittestsolid.ui.addUpdateTodo.updateTodo.UpdateTodoFragment"
+        android:label="UpdateTodoFragment"
+        tool:layout="@layout/fragment_add_update_todo">
+    <argument android:name="todo" app:argType="com.project.todounittestsolid.data.model.Todo" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="com.project.todounittestsolid.ui.addUpdateTodo.addTodo.AddTodoFragment"
+        android:label="AddTodoFragment"
+        tool:layout="@layout/fragment_add_update_todo"/>
+</navigation>
